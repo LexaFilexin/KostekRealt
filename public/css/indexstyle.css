@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Calibri;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 7px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+    display: flex;
+
+}
+
+    .about_contact {
+        width: 325px;
+        padding: 10px 0.5% 0px 25%;
+        display: flex;
+    }
+    
+    .number{
+        display: flex;
+    }
+
+    .num{
+        font-size: 1.3125em;
+        color: #fff;
+        margin: 5px 5px 0px 5px;
+        white-space: nowrap;
+    }
+
+    .logbutton{
+        display: flex;
+    }
+
+    .log{
+        margin: 6px 5px 0px 5px;
+    }
+
+    .log a{
+        color: #fff;
+        font-size: 1.25em;
+        text-decoration: none;
+    }
+
+    .log a:hover {
+        color: #ff5100;
+        font-size: 1.25em;
+        text-decoration: underline;
+    }
+
+    .yt_button{
+        width: 330px!important;
+        display: flex;
+        border-bottom: 1px solid #a9a9a9;
+        margin-top: -10px;
+        background-color: transparent!important;
+    }
+
+    .log_ico {
+        margin-top: 5px;
+    }
+
+    .yt_ref{
+        font-size: 0.7em;
+        margin-left: 620px;
+        margin-top: 25px;
+    }
+
+    .yt_ico{
+        margin-left: -170px;
+        margin-top: 15px;
+    }
+
+    .search{;
+        display: -webkit-inline-box;
+        margin-top: 5%;
+    }
+
+    .search_list{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .search_list:after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: #ff5100 transparent transparent transparent;
+        pointer-events: none;
+
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        z-index: 1;
+        margin-top: -3px;
+    }
+
+    .search_list select {
+        display: block;
+        width: 100%;
+        padding: .75rem 2.5rem .75rem 1rem;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+
+        font-family: Calibri;
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .search_list select:focus {
+        outline: 0;
+        border-color: #ff5100;
+    }
+
+    .txtform{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .txtform input{
+        display: block;
+        padding: .75rem 2.5rem .75rem 1rem;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+
+        font-family: Calibri;
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    .search_button{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .search_button input{
+        display: block;
+        padding: .75rem 1.5rem .75rem 1.5rem;
+        background: #ff5100;
+        border: 1px solid #000;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        appearance: none;
+
+        font-family: Calibri;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .teg_butons{
+        margin-top: 90px;
+    }
+
+    .tb_lvl1{width: 600px;
+        display: -webkit-inline-box;
+    }
+
+    .tb_lvl1 input{
+
+        padding: .3rem .5rem .3rem .5rem;
+        margin: 3px 3px 3px 3px;
+        background: transparent;
+        border: 1px solid #6e6e6e;
+        border-radius: 4px;
+
+        font-family: Calibri;
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+
+    .tb_lvl1 input:hover{
+        background: #ff5100;
+    }
+
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+    #about {
+        line-height: 40px;
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    #about > a {
+
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #about > a:hover {
+        color: #ff5100;
+        text-decoration: underline;
+    }
+
+    #about > a{
+        margin-left: 2%;
+        font-size: 1.25em;
+    }
+
+
+
+    .fixed {
+        z-index: 5000;
+        background-color: #2a1647c7;
+        border-bottom: 0px solid silver;
+    }
+
+    #main a {
+        color: #ff5100;
+        margin-left: -270px;
+    }
+
+    #main h3 {
+        font-size: 1.5em!important;
+    }
+
+    .obj{
+        padding-top: 75px;
+        text-align: center;
+        white-space: nowrap;
+        display: flex;
+        margin-left: 0px!important;
+    }
+
+    .abobj1{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-right: 15%;
+        color: #ff5100;
+    }
+
+    .abobj1t{
+        font-size: 0.3em;
+        font-weight: lighter;
+        color: #484848;
+    }
+
+
+    .abobj2{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-right: 15%;
+        color: #ff5100;
+    }
+
+    .abobj3{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-right: 15%;
+        color: #ff5100;
+    }
+
+    .yttxt {
+        font-size: 0.65em;
+        color: #ff5100;
+        width: 495px!important;
+    }
+
+
+    #top {
+        width: 100%;
+        background-image: url(https://www.roughguides.com/wp-content/uploads/2014/04/04.Shanghai-478913073-1680x1050.jpg);
+        background-blend-mode: multiply;
+        background-color: #2a1647c7;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+
+@media (min-width: 1001px) {
+    #top {
+        height: 710px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    #top {
+        font-size: 0.9em;
+    }
+}
+
+    #top h1 {
+        padding-top: 13%;
+        font-family: Calibri;
+        font-size: 60px;
+        line-height: 55px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+    #top h3 {
+        color: #ccc;
+    }
+
+
+    #main {
+        float: left;
+        font-size: 1.3em;
+    }
+
+@media (min-width: 1401px) {
+    #main {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #main {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+    #main div {
+        background-color: #fff;
+        width: 50%;
+        float: left;
+        font-family: Calibri;
+    }
+
+    #main h2 {
+        font-family: Calibri;
+        font-size: 2em
+    }
+    #main span {
+        font-family: Calibri;
+        color: #a0a0a0}
+    
+    #overview {
+        float: left;
+        background-color: #cfbeff;
+
+
+        padding: 100px 0;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    #overview h2 {font-size: 4em}
+    #overview h4 {color: #ccc; font-size: 1.5em}
+
+@media (min-width: 561px) {
+    #overview h2 {font-size: 4em}
+}
+
+@media (max-width: 560px) {
+    #overview h2 {font-size: 2em}
+}
+
+    #overview .img:not(:last-child) {
+        margin-right: 5%;
+    }
+
+    #overview .img {
+        float: left;
+        width: 20%;
+        
+        margin-top: 50px;
+    }
+
+
+    #overview img {
+        border-bottom: 180px solid #fff;
+        float: left;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #overview span {
+        float: left;
+        width: 100%;
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
+
+@media (max-width: 700px) {
+    #overview .img {
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+
+    .img {
+        position: relative;
+        width: 100%; /* для IE 6 */
+    }
+ 
+    .img h2 {
+        text-align: left;
+        position: absolute;
+        top: 231px;
+        left: 0;
+        width: 100%;
+    }
+    .img h2 span {
+        color: #fff;
+        background-color: #695b7ec7;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+
+
+h1, h2, h3, h4, h5 {
+    font-family: Calibri;
+    font-weight: 300;
+    
+}
+
+h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+    #faq {
+        background-image: url(https://www.roughguides.com/wp-content/uploads/2014/04/04.Shanghai-478913073-1680x1050.jpg);
+        background-blend-mode: multiply;
+        background-color: #2a1647c7;
+        background-size: cover;
+
+         width: 100%;
+        float: left;
+        padding-top: 100px;
+    }
+
+    #faq .sp1{
+        opacity: 0.89;
+        font-family: Calibri;
+        font-size: 3em!important;
+        line-height: 55px;
+        font-weight: 400;
+        color: #ffffff!important;
+        margin-left: 12%;
+        display: flex;
+    }
+
+    .bord{
+        width: 55%;
+        border-top: 3px solid #867090;
+        margin-left: 4%!important;
+        margin-top: 3%!important;
+    }
+
+
+    .partners{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 15% 0 15% 0;
+    }
+
+    .partner_logo{
+
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 230px;
+    }
+
+    .partner_logo:not(:last-child) {
+        margin-right: 3%;
+    }
+
+    .partner_logo a {
+        opacity: 0.89;
+        font-family: Calibri;
+        font-size: 2em;
+        font-weight: 400;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+    
+    .partner_logo a:hover {
+        color: #ff5100;
+    }
+
+    .footer{
+        width: 100%!important;
+        margin-left: 0!important;
+        display: flex;
+    }
+    .top_footer{
+        border-top: 1px solid #000;
+        height: 140px;
+        margin-left: 0!important;
+        background-color: #2a1647c1!important;
+        background-blend-mode: multiply;
+        display: flex;
+
+    }
+
+    .bottom_ref{
+        
+
+        text-align: left;
+        margin-left: 0!important;
+        background: transparent;
+        display: flex!important;
+        flex-direction: column!important;
+        flex-wrap: wrap!important;
+        width: max-content!important;
+    }
+
+    .bottom_footer{
+        border-top: 1px solid #000;
+        width: 100%!important;
+        height: 45px!important;
+        margin-left: 0!important;
+        background-color: #301c4c!important;
+        background-blend-mode: multiply;
+        text-align: center;
+        color: #aba0a0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cr {
+        font-weight: 300;
+        letter-spacing: 0.005em;
+        color: #aba0a0;
+    }
+
+    .sp2{
+        margin: 45px 20px 20px 45px;
+    }
+
+    .sp3{
+        margin: 38px 20px 20px 10px; 
+    }
+
+    .sp3 a{
+        
+        font-weight: 300;
+        letter-spacing: 0.005em;
+        color: #aba0a0; 
+    }
+
+    .sp3 a:hover{
+        color: #ff5100; 
+    }
+
+    .sp4{
+        margin-left: 20%; 
+    }
+
