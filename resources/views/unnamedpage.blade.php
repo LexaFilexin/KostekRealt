@@ -1,57 +1,16 @@
-<!DOCTYPE html>
-    <html lang="ru">
+@extends('layouts.headeer')
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Агенство недвижимости KOSTEKREALT</title>
-            <link rel="stylesheet" href="css/aboutstyle.css">
-        </head>
+@section('title')
+    <title>404 KOSTEKREALT</title>
+@endsection('content')
 
-        <body>
-
-            <header>
-                <div id="logo">
-                    <a href="/index"><img src="img/logo.png" width="100" height="86"></a>
-                </div>
-
-                <div id="about">
-                    <a href="index#main" title="Возможности" onclick="slowScroll('#main')">О нас</a>
-                    <a href="index#overview" title="Преимущества" onclick="slowScroll('#overview')">Предложения</a>
-                    <a href="index#faq" title="Контакты" onclick="slowScroll('#faq')">Партнеры</a>
-                    <a href="/unnamedpage" title="комментарий">Контакты</a>
-                </div>
-
-                <div class="about_contact">
-                    <div class="number">
-                        <div class="num_ico">
-                            <img src="img/phone_ico.png">
-                        </div>
-
-                        <div class="num">
-                            <p>8 (950) 960 97 98</p>
-                        </div>
-                    </div>
-
-                    <div class="logbutton">
-                        <div class="log">
-                            <a href="/Registration" title="комментарий">Вход </a>
-                        </div>
-
-                        <div class="log_ico">
-                            <img src="img/login_ico.png">
-                        </div>
-                    </div>
-                </div>
-            </header>
-
+@section('content')
             <div id="top">
                 <h1>Премного извиняюсь,<br><span style="letter-spacing: -0.075em;">Андрей</span><span style="color: #ff5100; font-weight: 600; letter-spacing: -0.075em;"> Павлович</span></h1>
                 <h3>На данный момент я еще не создал эту страницу, но позже обязательно изваяю сие это<br>Чтобы вернуться на главную нажмите на логотип</h3>
-            
 
-                <footer></div>
+            </div>
+                <footer>
                     <div class="top_footer">
                         <div class="bottom_ref"></div>
                             <span class="sp2">
@@ -103,5 +62,4 @@
                         $("header").attr("class", "fixed");
                 });
             </script>
-        </body>
-    </html>
+@endsection('content')

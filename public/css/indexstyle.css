@@ -28,7 +28,7 @@ header {
         padding: 10px 0.5% 0px 25%;
         display: flex;
     }
-    
+
     .number{
         display: flex;
     }
@@ -144,7 +144,6 @@ header {
 
         font-family: Calibri;
         font-size: 1rem;
-        color: #ccc;
     }
 
     .search_button{
@@ -190,6 +189,133 @@ header {
     .tb_lvl1 input:hover{
         background: #ff5100;
     }
+
+
+
+
+
+    a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover { color: #1dabb8; }
+
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+input {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="submit"] { cursor: pointer; }
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after { clear: both; }
+
+#login-form {
+    margin: 5% auto;
+    width: 300px;
+}
+
+#login-form h2 {
+    background-color: #ff5100;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#login-form fieldset {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    position: relative;
+}
+
+#login-form input {
+    font-size: 1em;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 12px 10px;
+    width: 238px;
+}
+
+#login-form input[type="email"] {
+    border-radius: 3px 3px 0 0;
+}
+
+#login-form input[type="password"] {
+    border-top: none;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#login-form input[type="submit"] {
+    background: #ff5100;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px 20px;
+}
+
+#login-form input[type="submit"]:hover { background: #198d98; }
+
+#login-form footer {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.info {
+    background: #e5e5e5;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    width: 20px;
+}
+
+.form_footer{
+    display: flex;
+}
+
+.forgot{
+    margin-top: 12%;
+}
+
+.form_footer input{
+    margin-left: 14%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 701px) {
@@ -245,6 +371,10 @@ header {
     #main a {
         color: #ff5100;
         margin-left: -270px;
+    }
+
+    #main a:hover {
+        text-decoration: underline;
     }
 
     #main h3 {
@@ -388,7 +518,7 @@ header {
     #main span {
         font-family: Calibri;
         color: #a0a0a0}
-    
+
     #overview {
         float: left;
         background-color: #cfbeff;
@@ -418,7 +548,7 @@ header {
     #overview .img {
         float: left;
         width: 20%;
-        
+
         margin-top: 50px;
     }
 
@@ -449,7 +579,7 @@ header {
         position: relative;
         width: 100%; /* для IE 6 */
     }
- 
+
     .img h2 {
         text-align: left;
         position: absolute;
@@ -471,7 +601,7 @@ header {
 h1, h2, h3, h4, h5 {
     font-family: Calibri;
     font-weight: 300;
-    
+
 }
 
 h6 {
@@ -537,7 +667,7 @@ h6 {
         color: #ffffff;
         white-space: nowrap;
     }
-    
+
     .partner_logo a:hover {
         color: #ff5100;
     }
@@ -558,7 +688,7 @@ h6 {
     }
 
     .bottom_ref{
-        
+
 
         text-align: left;
         margin-left: 0!important;
@@ -595,21 +725,21 @@ h6 {
     }
 
     .sp3{
-        margin: 38px 20px 20px 10px; 
+        margin: 38px 20px 20px 10px;
     }
 
     .sp3 a{
-        
+
         font-weight: 300;
         letter-spacing: 0.005em;
-        color: #aba0a0; 
+        color: #aba0a0;
     }
 
     .sp3 a:hover{
-        color: #ff5100; 
+        color: #ff5100;
     }
 
     .sp4{
-        margin-left: 20%; 
+        margin-left: 20%;
     }
 

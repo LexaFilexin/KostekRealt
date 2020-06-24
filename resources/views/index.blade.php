@@ -1,51 +1,10 @@
-<!DOCTYPE html>
-    <html lang="ru">
+@extends('layouts.headeer')
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Агенство недвижимости KOSTEKREALT</title>
-            <link rel="stylesheet" href="css/indexstyle.css">
-        </head>
+@section('title')
+    <title>Агенство Недвижимости KOSTEKREALT</title>
+    @endsection('content')
 
-        <body>
-
-            <header>
-                <div id="logo" onclick="slowScroll('#top')">
-                    <span><img src="img/logo.png" width="100" height="86"></span>
-                </div>
-
-                <div id="about">
-                    <a href="#" title="Возможности" onclick="slowScroll('#main')">О нас</a>
-                    <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Предложения</a>
-                    <a href="#" title="Контакты" onclick="slowScroll('#faq')">Партнеры</a>
-                    <a href="/unnamedpage" title="комментарий">Контакты</a>
-                </div>
-
-                <div class="about_contact">
-                	<div class="number">
-                		<div class="num_ico">
-                			<img src="img/phone_ico.png">
-                		</div>
-
-                		<div class="num">
-                			<p>8 (950) 960 97 98</p>
-                		</div>
-                	</div>
-
-                	<div class="logbutton">
-                		<div class="log">
-                			<a href="/Registration" title="комментарий">Вход </a>
-                		</div>
-
-                		<div class="log_ico">
-                			<img src="img/login_ico.png">
-                		</div>
-                	</div>
-                </div>
-            </header>
-
+@section('content')
             <div id="top">
                 <h1>Агенство недвижимости<br><span style="letter-spacing: -0.075em;">KOSTEK</span><span style="color: #ff5100; font-weight: 600; letter-spacing: 0.075em;">REALT</span></h1>
                 <h3></h3>
@@ -54,6 +13,7 @@
                 	<div class="search_list">
 						<form>
 							<select name="location">
+                                <option value="l0">Расположение</option>
 							    <option value="l1">В черте города</option>
 							    <option value="l2">За городом</option>
 							</select>
@@ -62,7 +22,8 @@
 
                 	<div class="search_list">
                 		<form>
-							<select name="type">
+							<select name="type" >
+                                <option value="t0">Тип</option>
 						    	<option value="t1">Дом</option>
 						    	<option value="t2">Квартира</option>
 						    	<option value="t3">Участок</option>
@@ -72,7 +33,7 @@
 
                 	<div class="txtform">
                 		<form action="handler.php">
-   							<input maxlength="255" size="40" value="Например: Загородный дом">
+   							<input maxlength="255" size="40" placeholder="Например: Загородный дом">
   						</form>
                 	</div>
 
@@ -85,16 +46,18 @@
 
                 <div class="teg_butons">
                 	<div class="tb_lvl1">
-                		<input type="submit" value="Избы" />
-                		<input type="submit" value="Сехохозяйственный участок" />
-                		<input type="submit" value="Жильё в черте города" />
-                		<input type="submit" value="Загородный дом" />
-                		<input type="submit" value="Квартиры" />
+                        <form action="/unnamedpage" target="_blank">
+                            <input type="submit" value="Избы" />
+                            <input type="submit" value="Сехохозяйственный участок" />
+                            <input type="submit" value="Жильё в черте города" />
+                            <input type="submit" value="Загородный дом" />
+                            <input type="submit" value="Квартиры" />
 
-                		<input type="submit" value="Дома в стиле модерн" />
-                		<input type="submit" value="Коттедж" />
-                		<input type="submit" value="Квартиры премиум класса" />
-                		<input type="submit" value="Все предложения" />
+                            <input type="submit" value="Дома в стиле модерн" />
+                            <input type="submit" value="Коттедж" />
+                            <input type="submit" value="Квартиры премиум класса" />
+                            <input type="submit" value="Все предложения" />
+                        </form>
                 	</div>
                 </div>
             </div>
@@ -129,7 +92,7 @@
                     	</div>
                     </div>
 
-                   
+
 
                 </div>
 
@@ -157,7 +120,7 @@
             <div id="overview">
                 <h2>Последние предложения</h2>
 
-	            <div class="card">    
+	            <div class="card">
 	                <div class="img">
 	                    <img src="img/forest_house.jpg" alt="">
 	                    <h2><span>Загородный дом, 64кв.м., погреб., 47км. от города</span></h2>
@@ -255,5 +218,4 @@
                         $("header").attr("class", "fixed");
                 });
             </script>
-        </body>
-    </html>
+@endsection('content')
